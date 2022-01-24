@@ -34,6 +34,11 @@ class AuthenticationTextInputTableViewCell: UITableViewCell, NibLoadable, Reusab
         setupUI()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        textField.text = nil
+    }
+    
     private func setupUI() {
         contentView.backgroundColor = .clear
         self.backgroundColor = .clear

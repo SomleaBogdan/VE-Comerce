@@ -100,4 +100,5 @@ class UserStore: NSObject {
         let keychain = KeychainSwift()
         keychain.set(registerable.registerablePassword, forKey: registerable.registerableEmail)
     }
+    
 }

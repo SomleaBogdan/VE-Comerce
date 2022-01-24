@@ -21,6 +21,11 @@ class AuthenticationButtonTableViewCell: UITableViewCell, NibLoadable, Reusable 
         setupUI()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        actionButton.setTitle(nil, for: .normal)
+    }
+    
     private func setupUI() {
         contentView.backgroundColor = .clear
         self.backgroundColor = .clear

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Expenses View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddExpensesViewController" id="Y6W-OH-hqX" customClass="AddExpensesViewController" customModule="VE_Comerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-Lq-oen">
+                                <rect key="frame" x="25" y="54" width="364" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="LJD-V7-Zes"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="receiptInvoiceSegmentedValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="gGN-cd-dhi"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-hZ-LZd">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GtW-Lq-oen" secondAttribute="trailing" priority="750" constant="25" id="Bes-jv-kwn"/>
+                            <constraint firstItem="GtW-Lq-oen" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="PQM-T4-qol"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="X8j-hZ-LZd" secondAttribute="bottom" id="T1w-kw-bDt"/>
+                            <constraint firstItem="X8j-hZ-LZd" firstAttribute="top" secondItem="GtW-Lq-oen" secondAttribute="bottom" constant="15" id="ajx-ZX-pzD"/>
+                            <constraint firstItem="GtW-Lq-oen" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" priority="750" constant="25" id="dZr-eO-UwN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="X8j-hZ-LZd" secondAttribute="trailing" id="hI3-su-a2p"/>
+                            <constraint firstItem="X8j-hZ-LZd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kPq-yw-tBh"/>
+                            <constraint firstItem="GtW-Lq-oen" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zhU-S5-LoU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="receiptInvoiceSegmentedControl" destination="GtW-Lq-oen" id="9DD-AH-RFR"/>
+                        <outlet property="tableView" destination="X8j-hZ-LZd" id="PQn-Hr-vZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

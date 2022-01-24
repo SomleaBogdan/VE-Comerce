@@ -35,7 +35,7 @@ protocol Registerable: AnyObject {
     func registrationValidated() -> ValidationStatus?
 }
 
-class User: NSManagedObject, Codable {
+public class User: NSManagedObject, Codable {
     @NSManaged var identifier: String?
     @NSManaged var firstName: String?
     @NSManaged var lastName: String?
@@ -53,7 +53,7 @@ class User: NSManagedObject, Codable {
         case confirmPassword = "confirm_password"
     }
     
-    required convenience init(from decoder: Decoder) throws {
+    required convenience public init(from decoder: Decoder) throws {
         
         guard let context = decoder.userInfo[CodingUserInfoKey.context!] as? NSManagedObjectContext else { fatalError() }
         guard let entity = NSEntityDescription.entity(forEntityName: "User", in: context) else { fatalError() }

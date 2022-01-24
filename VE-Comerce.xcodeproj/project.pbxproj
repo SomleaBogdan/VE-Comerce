@@ -23,7 +23,22 @@
 		F655149B279B7DF50060FA67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655149A279B7DF50060FA67 /* RegisterViewController.swift */; };
 		F655149F279B7E650060FA67 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655149E279B7E650060FA67 /* UIStoryboard+Extension.swift */; };
 		F65514A2279B7EC60060FA67 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514A1279B7EC60060FA67 /* RegisterViewModel.swift */; };
-		F65514A6279B7F9D0060FA67 /* RegisterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514A5279B7F9D0060FA67 /* RegisterRepository.swift */; };
+		F65514ED279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514EC279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift */; };
+		F65514F0279EA4DB0060FA67 /* AuthenticationFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514EF279EA4DB0060FA67 /* AuthenticationFormField.swift */; };
+		F65514F2279EA9770060FA67 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514F1279EA9770060FA67 /* Reusable.swift */; };
+		F65514F4279EA9A50060FA67 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514F3279EA9A50060FA67 /* UITableView+Reusable.swift */; };
+		F65514F8279EBD3F0060FA67 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514F7279EBD3F0060FA67 /* UITableViewCell+Extension.swift */; };
+		F6551500279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65514FE279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift */; };
+		F6551501279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65514FF279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib */; };
+		F6551504279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6551502279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift */; };
+		F6551505279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6551503279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib */; };
+		F6551509279ECEAC0060FA67 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6551508279ECEAC0060FA67 /* NibLoadable.swift */; };
+		F655150D279ED1150060FA67 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655150C279ED1150060FA67 /* UIColor+Extension.swift */; };
+		F6551510279ED60A0060FA67 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655150F279ED60A0060FA67 /* UITextField+Extension.swift */; };
+		F6551513279EEB180060FA67 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6551512279EEB180060FA67 /* Dictionary+Extension.swift */; };
+		F6551516279EED700060FA67 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6551515279EED700060FA67 /* String+Extension.swift */; };
+		F6551519279EEE790060FA67 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6551518279EEE790060FA67 /* UIViewController+Extension.swift */; };
+		F655151C279EEF9B0060FA67 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655151B279EEF9B0060FA67 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +78,22 @@
 		F655149A279B7DF50060FA67 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F655149E279B7E650060FA67 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		F65514A1279B7EC60060FA67 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		F65514A5279B7F9D0060FA67 /* RegisterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepository.swift; sourceTree = "<group>"; };
+		F65514EC279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTableViewDataSourceDelegate.swift; sourceTree = "<group>"; };
+		F65514EF279EA4DB0060FA67 /* AuthenticationFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormField.swift; sourceTree = "<group>"; };
+		F65514F1279EA9770060FA67 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		F65514F3279EA9A50060FA67 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		F65514F7279EBD3F0060FA67 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		F65514FE279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextInputTableViewCell.swift; sourceTree = "<group>"; };
+		F65514FF279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationTextInputTableViewCell.xib; sourceTree = "<group>"; };
+		F6551502279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButtonTableViewCell.swift; sourceTree = "<group>"; };
+		F6551503279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationButtonTableViewCell.xib; sourceTree = "<group>"; };
+		F6551508279ECEAC0060FA67 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		F655150C279ED1150060FA67 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F655150F279ED60A0060FA67 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		F6551512279EEB180060FA67 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		F6551515279EED700060FA67 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F6551518279EEE790060FA67 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F655151B279EEF9B0060FA67 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +178,7 @@
 		F6551481279B6F460060FA67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F655151A279EEF7C0060FA67 /* AppError */,
 				F6551493279B79320060FA67 /* User */,
 			);
 			path = Model;
@@ -190,19 +221,20 @@
 		F6551486279B705C0060FA67 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F65514EE279E9E880060FA67 /* Additional Files */,
 				F6551488279B70780060FA67 /* Login */,
-				F6551487279B70710060FA67 /* Enroll */,
+				F6551487279B70710060FA67 /* Register */,
 				F6551489279B70930060FA67 /* Authentication.storyboard */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		F6551487279B70710060FA67 /* Enroll */ = {
+		F6551487279B70710060FA67 /* Register */ = {
 			isa = PBXGroup;
 			children = (
 				F655149A279B7DF50060FA67 /* RegisterViewController.swift */,
 			);
-			path = Enroll;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		F6551488279B70780060FA67 /* Login */ = {
@@ -241,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				F6551497279B7B940060FA67 /* Authentication */,
-				F65514A3279B7F840060FA67 /* Register */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -257,6 +288,9 @@
 		F655149C279B7E340060FA67 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				F65514F1279EA9770060FA67 /* Reusable.swift */,
+				F65514F3279EA9A50060FA67 /* UITableView+Reusable.swift */,
+				F6551508279ECEAC0060FA67 /* NibLoadable.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -264,7 +298,13 @@
 		F655149D279B7E400060FA67 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F655149E279B7E650060FA67 /* UIStoryboard+Extension.swift */,
+				F6551517279EEE6C0060FA67 /* UIViewController */,
+				F6551514279EED590060FA67 /* String */,
+				F6551511279EEAE40060FA67 /* Dictionary */,
+				F655150E279ED5FA0060FA67 /* UITextField */,
+				F655150B279ED1000060FA67 /* UIStoryboard */,
+				F655150A279ED0FB0060FA67 /* UIColor */,
+				F65514F6279EBD230060FA67 /* UITableViewCell */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -277,12 +317,105 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		F65514A3279B7F840060FA67 /* Register */ = {
+		F65514E7279E9E360060FA67 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				F65514A5279B7F9D0060FA67 /* RegisterRepository.swift */,
+				F6551507279ECE520060FA67 /* Button */,
+				F6551506279ECE490060FA67 /* TextInput */,
 			);
-			path = Register;
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F65514EE279E9E880060FA67 /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				F65514E7279E9E360060FA67 /* TableViewCells */,
+				F65514EC279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift */,
+				F65514EF279EA4DB0060FA67 /* AuthenticationFormField.swift */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		F65514F6279EBD230060FA67 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F65514F7279EBD3F0060FA67 /* UITableViewCell+Extension.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		F6551506279ECE490060FA67 /* TextInput */ = {
+			isa = PBXGroup;
+			children = (
+				F65514FE279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift */,
+				F65514FF279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib */,
+			);
+			path = TextInput;
+			sourceTree = "<group>";
+		};
+		F6551507279ECE520060FA67 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F6551502279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift */,
+				F6551503279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F655150A279ED0FB0060FA67 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F655150C279ED1150060FA67 /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		F655150B279ED1000060FA67 /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				F655149E279B7E650060FA67 /* UIStoryboard+Extension.swift */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		F655150E279ED5FA0060FA67 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				F655150F279ED60A0060FA67 /* UITextField+Extension.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		F6551511279EEAE40060FA67 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F6551512279EEB180060FA67 /* Dictionary+Extension.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		F6551514279EED590060FA67 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F6551515279EED700060FA67 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		F6551517279EEE6C0060FA67 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6551518279EEE790060FA67 /* UIViewController+Extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F655151A279EEF7C0060FA67 /* AppError */ = {
+			isa = PBXGroup;
+			children = (
+				F655151B279EEF9B0060FA67 /* AppError.swift */,
+			);
+			path = AppError;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +523,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F655148A279B70930060FA67 /* Authentication.storyboard in Resources */,
+				F6551505279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib in Resources */,
+				F6551501279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib in Resources */,
 				F655145E279B6EEF0060FA67 /* LaunchScreen.storyboard in Resources */,
 				F655145B279B6EEF0060FA67 /* Assets.xcassets in Resources */,
 			);
@@ -417,16 +552,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F655148F279B72C80060FA67 /* Observable.swift in Sources */,
+				F655150D279ED1150060FA67 /* UIColor+Extension.swift in Sources */,
 				F65514A2279B7EC60060FA67 /* RegisterViewModel.swift in Sources */,
+				F6551504279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift in Sources */,
+				F6551509279ECEAC0060FA67 /* NibLoadable.swift in Sources */,
+				F6551510279ED60A0060FA67 /* UITextField+Extension.swift in Sources */,
 				F6551492279B77DF0060FA67 /* AuthenticationViewModel.swift in Sources */,
+				F6551519279EEE790060FA67 /* UIViewController+Extension.swift in Sources */,
+				F6551500279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift in Sources */,
+				F6551513279EEB180060FA67 /* Dictionary+Extension.swift in Sources */,
+				F65514F4279EA9A50060FA67 /* UITableView+Reusable.swift in Sources */,
+				F65514F8279EBD3F0060FA67 /* UITableViewCell+Extension.swift in Sources */,
+				F65514F0279EA4DB0060FA67 /* AuthenticationFormField.swift in Sources */,
+				F6551516279EED700060FA67 /* String+Extension.swift in Sources */,
 				F6551495279B793D0060FA67 /* User.swift in Sources */,
 				F655149B279B7DF50060FA67 /* RegisterViewController.swift in Sources */,
 				F655148C279B70B40060FA67 /* LoginViewController.swift in Sources */,
+				F65514ED279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift in Sources */,
+				F65514F2279EA9770060FA67 /* Reusable.swift in Sources */,
 				F655144F279B6EEE0060FA67 /* AppDelegate.swift in Sources */,
+				F655151C279EEF9B0060FA67 /* AppError.swift in Sources */,
 				F6551459279B6EEE0060FA67 /* VE_Comerce.xcdatamodeld in Sources */,
 				F6551499279B7BA60060FA67 /* AuthenticationRepository.swift in Sources */,
 				F655149F279B7E650060FA67 /* UIStoryboard+Extension.swift in Sources */,
-				F65514A6279B7F9D0060FA67 /* RegisterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +753,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +782,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

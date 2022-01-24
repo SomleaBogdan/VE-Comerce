@@ -7,13 +7,22 @@
 
 import Foundation
 
+protocol RegisterService: AnyObject {
+    func register(user: Registerable, completion: @escaping (Result<User, Error>) -> Void)
+}
+
 protocol AuthenticationService: AnyObject {
-    func authenticateUser(with email: String, password: String, completion: @escaping (Result<User, Error>) -> Void)
+    func authenticate(user: Authenticable, completion: @escaping (Result<User, Error>) -> Void)
 }
 
 class AuthenticationRepository: AuthenticationService {
-    func authenticateUser(with email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
-        let user = User(email: "somleabogdan@gmail.com", password: "123456  ")
-        completion(.success(user))
+    func authenticate(user: Authenticable, completion: @escaping (Result<User, Error>) -> Void) {
+        
+    }
+}
+
+extension AuthenticationRepository: RegisterService {
+    func register(user: Registerable, completion: @escaping (Result<User, Error>) -> Void) {
+        
     }
 }

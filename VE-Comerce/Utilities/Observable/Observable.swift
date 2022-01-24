@@ -8,12 +8,15 @@
 import Foundation
 
 class Observable<T>: NSObject {
-    typealias Listener = (T?) -> Void
+    typealias Listener = (T) -> Void
     var listeners: [Listener]
     
     var value: T? {
         didSet {
             for listener in listeners {
+                guard let value = value else {
+                    return
+                }
                 listener(value)
             }
         }

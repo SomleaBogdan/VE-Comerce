@@ -36,7 +36,7 @@ class AuthenticationViewModel {
             case .success(let user):
                 self.user.value = user
             case .failure(let error):
-                self.error.value = AppError(description: error.localizedDescription)
+                self.error.value = AppError(description: error.localizedString ?? "Something went wrong. Try again later.")
             }
         }
     }

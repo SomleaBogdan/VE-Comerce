@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import CoreData
+
+extension CodingUserInfoKey {
+    static let context = CodingUserInfoKey(rawValue: "context")
+}
 
 enum ValidationStatus {
     case success
@@ -30,12 +35,13 @@ protocol Registerable: AnyObject {
     func registrationValidated() -> ValidationStatus?
 }
 
-class User: Codable {
-    var identifier: String?
-    var email: String
-    var password: String
-    var firstName: String
-    var lastName: String
+class User: NSManagedObject, Codable {
+    @NSManaged var identifier: String?
+    @NSManaged var firstName: String?
+    @NSManaged var lastName: String?
+    @NSManaged var email: String
+    
+    var password: String?
     var confirmPassword: String?
     
     enum CodingKeys: String, CodingKey {
@@ -45,6 +51,29 @@ class User: Codable {
         case firstName = "first_name"
         case lastName = "last_name"
         case confirmPassword = "confirm_password"
+    }
+    
+    required convenience init(from decoder: Decoder) throws {
+        
+        guard let context = decoder.userInfo[CodingUserInfoKey.context!] as? NSManagedObjectContext else { fatalError() }
+        guard let entity = NSEntityDescription.entity(forEntityName: "User", in: context) else { fatalError() }
+        
+        self.init(entity: entity, insertInto: context)
+        do {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            self.identifier = try container.decodeIfPresent(String.self, forKey: .identifier) ?? ""
+            self.email = try container.decodeIfPresent(String.self, forKey: .email) ?? ""
+            self.firstName = try container.decodeIfPresent(String.self, forKey: .firstName) ?? ""
+            self.lastName = try container.decodeIfPresent(String.self, forKey: .lastName) ?? ""
+            self.password = try container.decodeIfPresent(String.self, forKey: .password) ?? ""
+            self.confirmPassword = try container.decodeIfPresent(String.self, forKey: .confirmPassword) ?? ""
+        } catch {
+            fatalError()
+        }
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        
     }
 }
 
@@ -56,7 +85,7 @@ extension User: Authenticable {
     }
     var authenticablePassword: String {
         get {
-            return self.password
+            return self.password ?? ""
         }
     }
     
@@ -74,25 +103,25 @@ extension User: Authenticable {
 extension User: Registerable {
     var registerableFirstName: String {
         get {
-            return self.firstName
+            return self.firstName ?? ""
         }
     }
     
     var registerableLastName: String {
         get {
-            return self.lastName
+            return self.lastName ?? ""
         }
     }
     
     var registerableEmail: String {
         get {
-            return self.email
+            return self.email ?? ""
         }
     }
     
     var registerablePassword: String {
         get {
-            return self.password
+            return self.password ?? ""
         }
     }
     
@@ -120,6 +149,6 @@ extension User: Registerable {
             return .invalid(error:"Your passwords do not match.")
         }
         return .success
-            
+        
     }
 }

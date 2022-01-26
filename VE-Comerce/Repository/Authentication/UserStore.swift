@@ -75,13 +75,11 @@ class UserStore: NSObject {
             throw AppError.userRegisteredAlready
         }
         let storedUser = try storeUser()
-        
-        
         return storedUser
     }
     
     func storeUser() throws -> User {
-        guard let storedUser = NSEntityDescription.insertNewObject(forEntityName: "User", into: appDelegate.persistentContainer.viewContext) as? User else {
+        guard let registerable = NSEntityDescription.insertNewObject(forEntityName: "User", into: appDelegate.persistentContainer.viewContext) as? User else {
             throw AppError.storageError
         }
         do {
@@ -90,7 +88,7 @@ class UserStore: NSObject {
             throw AppError.storageError
         }
         try storeCredentials()
-        return storedUser
+        return registerable
     }
     
     func storeCredentials() throws {

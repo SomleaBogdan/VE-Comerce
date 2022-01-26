@@ -41,7 +41,6 @@ class InvoiceStore: NSObject {
         invoiceToStore.total = invoice.total
         invoiceToStore.user = user
         
-        print("STORED INVOICE => \(invoice)")
         do {
             try appDelegate.persistentContainer.viewContext.save()
         } catch {

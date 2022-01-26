@@ -115,7 +115,7 @@ extension User: Registerable {
     
     var registerableEmail: String {
         get {
-            return self.email ?? ""
+            return self.email
         }
     }
     

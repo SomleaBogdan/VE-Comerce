@@ -51,12 +51,24 @@
 		F69017A4279F416500328924 /* AddExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017A3279F416500328924 /* AddExpensesViewModel.swift */; };
 		F69017A7279F45F500328924 /* AddExpensesTableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017A6279F45F500328924 /* AddExpensesTableViewDataSourceDelegate.swift */; };
 		F69017A9279F46E600328924 /* AddExpensesFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017A8279F46E600328924 /* AddExpensesFormField.swift */; };
-		F69017B0279F4AFF00328924 /* AddExpensesLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017AE279F4AFF00328924 /* AddExpensesLabelTableViewCell.swift */; };
-		F69017B1279F4AFF00328924 /* AddExpensesLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69017AF279F4AFF00328924 /* AddExpensesLabelTableViewCell.xib */; };
 		F69017B4279F4C2900328924 /* AddExpensesTextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017B2279F4C2900328924 /* AddExpensesTextInputTableViewCell.swift */; };
 		F69017B5279F4C2900328924 /* AddExpensesTextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69017B3279F4C2900328924 /* AddExpensesTextInputTableViewCell.xib */; };
 		F69017B8279F4C8000328924 /* AddExpensesSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017B6279F4C8000328924 /* AddExpensesSwitchTableViewCell.swift */; };
 		F69017B9279F4C8000328924 /* AddExpensesSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69017B7279F4C8000328924 /* AddExpensesSwitchTableViewCell.xib */; };
+		F69017C527A07D2600328924 /* AddExpenseImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017C327A07D2600328924 /* AddExpenseImageTableViewCell.swift */; };
+		F69017C627A07D2600328924 /* AddExpenseImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69017C427A07D2600328924 /* AddExpenseImageTableViewCell.xib */; };
+		F69017C927A0810F00328924 /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017C827A0810F00328924 /* CustomImagePicker.swift */; };
+		F69017CB27A08D2000328924 /* UITextField+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017CA27A08D2000328924 /* UITextField+DatePicker.swift */; };
+		F69017CE27A0A06400328924 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017CD27A0A06400328924 /* CurrencyViewController.swift */; };
+		F69017D127A0A14300328924 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017D027A0A14300328924 /* CurrencyTableViewCell.swift */; };
+		F69017D527A0AA6A00328924 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017D427A0AA6A00328924 /* ImageRepository.swift */; };
+		F69017D927A0B00A00328924 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017D827A0B00A00328924 /* Invoice.swift */; };
+		F69017DB27A12DBB00328924 /* InvoiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017DA27A12DBB00328924 /* InvoiceStore.swift */; };
+		F69017DE27A1521500328924 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017DD27A1521500328924 /* ExpenseTableViewCell.swift */; };
+		F69017E127A1532400328924 /* DashboardDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017E027A1532400328924 /* DashboardDataSourceDelegate.swift */; };
+		F69017E427A153B900328924 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017E327A153B900328924 /* Expense.swift */; };
+		F69017E627A15F1200328924 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017E527A15F1200328924 /* Receipt.swift */; };
+		F69017E827A15FC800328924 /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69017E727A15FC800328924 /* ReceiptStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,12 +138,24 @@
 		F69017A3279F416500328924 /* AddExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesViewModel.swift; sourceTree = "<group>"; };
 		F69017A6279F45F500328924 /* AddExpensesTableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesTableViewDataSourceDelegate.swift; sourceTree = "<group>"; };
 		F69017A8279F46E600328924 /* AddExpensesFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesFormField.swift; sourceTree = "<group>"; };
-		F69017AE279F4AFF00328924 /* AddExpensesLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesLabelTableViewCell.swift; sourceTree = "<group>"; };
-		F69017AF279F4AFF00328924 /* AddExpensesLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExpensesLabelTableViewCell.xib; sourceTree = "<group>"; };
 		F69017B2279F4C2900328924 /* AddExpensesTextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesTextInputTableViewCell.swift; sourceTree = "<group>"; };
 		F69017B3279F4C2900328924 /* AddExpensesTextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExpensesTextInputTableViewCell.xib; sourceTree = "<group>"; };
 		F69017B6279F4C8000328924 /* AddExpensesSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesSwitchTableViewCell.swift; sourceTree = "<group>"; };
 		F69017B7279F4C8000328924 /* AddExpensesSwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExpensesSwitchTableViewCell.xib; sourceTree = "<group>"; };
+		F69017C327A07D2600328924 /* AddExpenseImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseImageTableViewCell.swift; sourceTree = "<group>"; };
+		F69017C427A07D2600328924 /* AddExpenseImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExpenseImageTableViewCell.xib; sourceTree = "<group>"; };
+		F69017C827A0810F00328924 /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
+		F69017CA27A08D2000328924 /* UITextField+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+DatePicker.swift"; sourceTree = "<group>"; };
+		F69017CD27A0A06400328924 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		F69017D027A0A14300328924 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		F69017D427A0AA6A00328924 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		F69017D827A0B00A00328924 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		F69017DA27A12DBB00328924 /* InvoiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceStore.swift; sourceTree = "<group>"; };
+		F69017DD27A1521500328924 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		F69017E027A1532400328924 /* DashboardDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDataSourceDelegate.swift; sourceTree = "<group>"; };
+		F69017E327A153B900328924 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		F69017E527A15F1200328924 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		F69017E727A15FC800328924 /* ReceiptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +260,9 @@
 		F6551481279B6F460060FA67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F69017E227A153AB00328924 /* Expense */,
+				F69017D727A0AFEE00328924 /* Receipt */,
+				F69017D627A0AFE900328924 /* Invoice */,
 				F655151A279EEF7C0060FA67 /* AppError */,
 				F6551493279B79320060FA67 /* User */,
 			);
@@ -256,6 +283,7 @@
 		F6551483279B6F560060FA67 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F69017C727A080ED00328924 /* CustomImagePicker */,
 				F655149C279B7E340060FA67 /* Reusable */,
 				F655148D279B72BC0060FA67 /* Observable */,
 			);
@@ -334,6 +362,7 @@
 		F6551496279B7B830060FA67 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				F69017D227A0A99C00328924 /* Image */,
 				F6901799279F3E1500328924 /* Receipt */,
 				F6901795279F296B00328924 /* Invoice */,
 				F6551497279B7B940060FA67 /* Authentication */,
@@ -447,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				F655150F279ED60A0060FA67 /* UITextField+Extension.swift */,
+				F69017CA27A08D2000328924 /* UITextField+DatePicker.swift */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -495,6 +525,7 @@
 		F690178F279F291A00328924 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				F69017DF27A1530D00328924 /* Additional Files */,
 				F6901790279F292B00328924 /* DashboardViewController.swift */,
 			);
 			path = Dashboard;
@@ -512,6 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				F6901796279F297800328924 /* InvoiceRepository.swift */,
+				F69017DA27A12DBB00328924 /* InvoiceStore.swift */,
 			);
 			path = Invoice;
 			sourceTree = "<group>";
@@ -520,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				F690179A279F3E2300328924 /* ReceiptRepository.swift */,
+				F69017E727A15FC800328924 /* ReceiptStore.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -527,6 +560,7 @@
 		F690179C279F3FAE00328924 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				F69017CC27A0A05000328924 /* Currency */,
 				F690179F279F3FEE00328924 /* AddExpenses */,
 				F690179D279F3FE000328924 /* Expenses.storyboard */,
 			);
@@ -563,7 +597,7 @@
 		F69017AA279F4A5800328924 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				F69017AD279F4AC300328924 /* Label */,
+				F69017C227A07D1200328924 /* Image */,
 				F69017AC279F4ABB00328924 /* TextInput */,
 				F69017AB279F4AB200328924 /* Switch */,
 			);
@@ -588,13 +622,87 @@
 			path = TextInput;
 			sourceTree = "<group>";
 		};
-		F69017AD279F4AC300328924 /* Label */ = {
+		F69017C227A07D1200328924 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				F69017AE279F4AFF00328924 /* AddExpensesLabelTableViewCell.swift */,
-				F69017AF279F4AFF00328924 /* AddExpensesLabelTableViewCell.xib */,
+				F69017C327A07D2600328924 /* AddExpenseImageTableViewCell.swift */,
+				F69017C427A07D2600328924 /* AddExpenseImageTableViewCell.xib */,
 			);
-			path = Label;
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F69017C727A080ED00328924 /* CustomImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F69017C827A0810F00328924 /* CustomImagePicker.swift */,
+			);
+			path = CustomImagePicker;
+			sourceTree = "<group>";
+		};
+		F69017CC27A0A05000328924 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				F69017CF27A0A12700328924 /* TableViewCell */,
+				F69017CD27A0A06400328924 /* CurrencyViewController.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		F69017CF27A0A12700328924 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F69017D027A0A14300328924 /* CurrencyTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		F69017D227A0A99C00328924 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F69017D427A0AA6A00328924 /* ImageRepository.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F69017D627A0AFE900328924 /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				F69017D827A0B00A00328924 /* Invoice.swift */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		F69017D727A0AFEE00328924 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				F69017E527A15F1200328924 /* Receipt.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		F69017DC27A1512700328924 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F69017DD27A1521500328924 /* ExpenseTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F69017DF27A1530D00328924 /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				F69017DC27A1512700328924 /* TableViewCells */,
+				F69017E027A1532400328924 /* DashboardDataSourceDelegate.swift */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		F69017E227A153AB00328924 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				F69017E327A153B900328924 /* Expense.swift */,
+			);
+			path = Expense;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,10 +815,10 @@
 				F655148A279B70930060FA67 /* Authentication.storyboard in Resources */,
 				F690178E279F28E700328924 /* Dashboard.storyboard in Resources */,
 				F6551505279ECE470060FA67 /* AuthenticationButtonTableViewCell.xib in Resources */,
-				F69017B1279F4AFF00328924 /* AddExpensesLabelTableViewCell.xib in Resources */,
 				F6551501279ECE340060FA67 /* AuthenticationTextInputTableViewCell.xib in Resources */,
 				F69017B9279F4C8000328924 /* AddExpensesSwitchTableViewCell.xib in Resources */,
 				F655145E279B6EEF0060FA67 /* LaunchScreen.storyboard in Resources */,
+				F69017C627A07D2600328924 /* AddExpenseImageTableViewCell.xib in Resources */,
 				F690179E279F3FE000328924 /* Expenses.storyboard in Resources */,
 				F655145B279B6EEF0060FA67 /* Assets.xcassets in Resources */,
 			);
@@ -784,27 +892,37 @@
 				F655150D279ED1150060FA67 /* UIColor+Extension.swift in Sources */,
 				F69017A4279F416500328924 /* AddExpensesViewModel.swift in Sources */,
 				F69017A7279F45F500328924 /* AddExpensesTableViewDataSourceDelegate.swift in Sources */,
+				F69017C527A07D2600328924 /* AddExpenseImageTableViewCell.swift in Sources */,
 				F65514A2279B7EC60060FA67 /* RegisterViewModel.swift in Sources */,
+				F69017E827A15FC800328924 /* ReceiptStore.swift in Sources */,
 				F6901794279F295100328924 /* DashboardViewModel.swift in Sources */,
+				F69017DE27A1521500328924 /* ExpenseTableViewCell.swift in Sources */,
 				F6551504279ECE470060FA67 /* AuthenticationButtonTableViewCell.swift in Sources */,
 				F6551509279ECEAC0060FA67 /* NibLoadable.swift in Sources */,
+				F69017CE27A0A06400328924 /* CurrencyViewController.swift in Sources */,
 				F69017A1279F400100328924 /* AddExpensesViewController.swift in Sources */,
 				F6551510279ED60A0060FA67 /* UITextField+Extension.swift in Sources */,
 				F69017B4279F4C2900328924 /* AddExpensesTextInputTableViewCell.swift in Sources */,
 				F6551492279B77DF0060FA67 /* AuthenticationViewModel.swift in Sources */,
 				F6901797279F297800328924 /* InvoiceRepository.swift in Sources */,
-				F69017B0279F4AFF00328924 /* AddExpensesLabelTableViewCell.swift in Sources */,
 				F6901791279F292B00328924 /* DashboardViewController.swift in Sources */,
 				F6551519279EEE790060FA67 /* UIViewController+Extension.swift in Sources */,
 				F6551500279ECE340060FA67 /* AuthenticationTextInputTableViewCell.swift in Sources */,
 				F6551513279EEB180060FA67 /* Dictionary+Extension.swift in Sources */,
+				F69017CB27A08D2000328924 /* UITextField+DatePicker.swift in Sources */,
 				F65514F4279EA9A50060FA67 /* UITableView+Reusable.swift in Sources */,
+				F69017DB27A12DBB00328924 /* InvoiceStore.swift in Sources */,
 				F65514F8279EBD3F0060FA67 /* UITableViewCell+Extension.swift in Sources */,
 				F65514F0279EA4DB0060FA67 /* AuthenticationFormField.swift in Sources */,
 				F6551516279EED700060FA67 /* String+Extension.swift in Sources */,
+				F69017C927A0810F00328924 /* CustomImagePicker.swift in Sources */,
 				F6551495279B793D0060FA67 /* User.swift in Sources */,
 				F655149B279B7DF50060FA67 /* RegisterViewController.swift in Sources */,
+				F69017E127A1532400328924 /* DashboardDataSourceDelegate.swift in Sources */,
+				F69017D527A0AA6A00328924 /* ImageRepository.swift in Sources */,
+				F69017D127A0A14300328924 /* CurrencyTableViewCell.swift in Sources */,
 				F655151E279F1D280060FA67 /* UserStore.swift in Sources */,
+				F69017D927A0B00A00328924 /* Invoice.swift in Sources */,
 				F655148C279B70B40060FA67 /* LoginViewController.swift in Sources */,
 				F65514ED279E9E810060FA67 /* AuthenticationTableViewDataSourceDelegate.swift in Sources */,
 				F65514F2279EA9770060FA67 /* Reusable.swift in Sources */,
@@ -812,7 +930,9 @@
 				F655151C279EEF9B0060FA67 /* AppError.swift in Sources */,
 				F69017A9279F46E600328924 /* AddExpensesFormField.swift in Sources */,
 				F69017B8279F4C8000328924 /* AddExpensesSwitchTableViewCell.swift in Sources */,
+				F69017E427A153B900328924 /* Expense.swift in Sources */,
 				F6551459279B6EEE0060FA67 /* VE_Comerce.xcdatamodeld in Sources */,
+				F69017E627A15F1200328924 /* Receipt.swift in Sources */,
 				F6551499279B7BA60060FA67 /* AuthenticationRepository.swift in Sources */,
 				F655149F279B7E650060FA67 /* UIStoryboard+Extension.swift in Sources */,
 			);
@@ -989,6 +1109,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "VE-Comerce/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "VE-Comerce";
+				INFOPLIST_KEY_NSCameraUsageDescription = "VE-Comerce uses camera just to take photos of your invoices/receipts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "VE-Comerce uses the photo library just to get your invoices/receipts";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
@@ -1019,6 +1141,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "VE-Comerce/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "VE-Comerce";
+				INFOPLIST_KEY_NSCameraUsageDescription = "VE-Comerce uses camera just to take photos of your invoices/receipts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "VE-Comerce uses the photo library just to get your invoices/receipts";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;

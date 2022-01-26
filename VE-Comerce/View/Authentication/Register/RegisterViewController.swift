@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController {
         viewModel.user.observe({ [weak self] user in
             guard let self = self else { return }
             guard let user = user else { return }
-            print("USER CHANGED")
+            self.navigateToDashboardWith(user: user)
         })
         
         viewModel.error.observe({ [weak self] error in
@@ -53,6 +53,17 @@ class RegisterViewController: UIViewController {
             guard let error = error else { return }
             self.showErrorAlertWith(description: error.localizedString)
         })
+    }
+    
+    private func navigateToDashboardWith(user: User) {
+        let dashboardViewController = UIStoryboard.dashboard.instantiateViewController(identifier: "DashboardViewController", creator: { coder in
+            let invoiceRepository = InvoiceRepository(user: user)
+            let receiptRepository = ReceiptRepository(user: user)
+            let registerViewModel = DashboardViewModel(invoiceService: invoiceRepository,
+                                                       receiptService: receiptRepository)
+            return DashboardViewController(coder: coder, viewModel: registerViewModel, user: user)
+        })
+        navigationController?.pushViewController(dashboardViewController, animated: true)
     }
 }
 

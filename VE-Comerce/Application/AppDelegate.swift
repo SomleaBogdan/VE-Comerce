@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let container = NSPersistentContainer(name: "VE_Comerce")
+        print(container.persistentStoreDescriptions.first?.url ?? "")
         return true
     }
 

@@ -9,28 +9,52 @@ import XCTest
 @testable import VE_Comerce
 
 class VE_ComerceTests: XCTestCase {
-
+    
+    private var sut: AuthenticationViewModel!
+    private var authService: MockAuthenticationService!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        authService = MockAuthenticationService()
+        sut = AuthenticationViewModel(authenticationService: authService)
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        authService = nil
+        try super.tearDownWithError()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testAuthenticationWithCorrectDetailsSetsSuccessPresentedToTrue() {
+        let userDictionary = ["email": "somleabogdan@gmail.com",
+                              "password": "123456"]
+        do {
+            let user: User = try userDictionary.decoded()
+            authService.authenticateResult = .success(user)
+            sut.authenticate(user: user)
+            XCTAssertNotNil(sut.user.value != nil)
+        } catch {
+            print("MOCKED USER INVALID")
         }
     }
+    
+    func testLoginWithErrorSetsError() {
+        let userDictionary = ["email": "somleabogdan@gmail.com",
+                              "password": "123456"]
+        do {
+            let user: User = try userDictionary.decoded()
+            authService.authenticateResult = .failure(AppError.invalidEmail)
+            sut.authenticate(user: user)
+            XCTAssertNotNil(sut.error.value != nil)
+        } catch {
+            print("MOCKED USER INVALID")
+        }
+    }
+}
 
+class MockAuthenticationService: AuthenticationService {
+    var authenticateResult: Result<User, AppError> = .success(User())
+    func authenticate(user: Authenticable, completion: @escaping (Result<User, AppError>) -> Void) {
+        completion(authenticateResult)
+    }
 }
